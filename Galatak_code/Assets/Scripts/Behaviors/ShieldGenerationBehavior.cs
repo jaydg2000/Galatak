@@ -25,7 +25,7 @@ public class ShieldGenerationBehavior : MonoBehaviour
 
         for (int i = 0; i < 125; i++)
         {
-            var newSegment = Instantiate(this.ShieldPrefab);
+            var newSegment = Instantiate(this.ShieldPrefab, transform);
             newSegment.transform.position = new Vector2(currentX, currentY);
             currentX += shieldSegmentWidth;
         }
